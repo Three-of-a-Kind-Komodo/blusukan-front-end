@@ -1,0 +1,31 @@
+.icons{
+    border-bottom:1px solid #cccccc;     
+    line-height: 30px;
+   
+    
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    
+}
+.social-icon{
+    border: 0;
+    padding: 0;  
+    margin: 15px;
+    margin-left: 15px;
+}
+
+.info-footer{
+    color: #666666;
+    font-family: Arial, Verdana, Trebuchet , sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    
+}
+
+.footer{
+    margin-top: 5rem;
+}

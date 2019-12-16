@@ -1,0 +1,18 @@
+.full-page {
+  margin: 0;
+  height: 950px;
+  max-height: 90vh;
+}
+
+.Carousel-image {
+  object-fit: cover;
+  height: 950px;
+  max-height: 90vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 90vh;
+  height: 950px;
+}

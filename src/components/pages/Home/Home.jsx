@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Jumbotron, Grid, Col, Image, Button, Row } from "react-bootstrap";
+
+import HomePageCarousel from "./HomepageCarousel";
+import SlickCarousel from "./SlickCarousel";
 import TourPlace from "./TourPlace";
 import "./home.css";
 
@@ -8,7 +11,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div className="header">
+        {/* <div className="header">
           <Grid>
             <Jumbotron>
               <h2>Enjoy Your Dream City Tours</h2>
@@ -21,7 +24,11 @@ export default class Home extends Component {
               </Link>
             </Jumbotron>
           </Grid>
-        </div>
+        </div> */}
+
+        {/* <HomePageCarousel /> */}
+        <SlickCarousel />
+
         <Grid>
           <div className="banner text-center">
             <h2>The best city tours you can choose</h2>

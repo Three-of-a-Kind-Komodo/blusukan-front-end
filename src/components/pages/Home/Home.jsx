@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Jumbotron, Grid, Col, Image, Button, Row } from "react-bootstrap";
 import TourPlace from "./TourPlace";
-import "../Styles/home.css";
+import "./home.css";
 
 export default class Home extends Component {
   render() {

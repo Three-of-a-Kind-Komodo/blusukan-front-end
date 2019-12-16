@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Thumbnail, Grid, Col, Image, Button, Row } from "react-bootstrap";
-import "../Styles/landmarks.css";
+import "./landmarks.css";
 
 export default class Home extends Component {
   render() {
@@ -83,11 +83,11 @@ export default class Home extends Component {
               <Thumbnail src="assets/img/places/jordan.jpg" alt="242x200">
                 <h3>Jordan</h3>
                 <p>
-                  Jordan, Petra • 7 days Start your Eastern Europe
-                  trip from Berlin – one of the most attractive European cities.
-                  Head out to Warsaw – the capital of Poland, where you’ll be
-                  able to take a guided tour through the city’s places of
-                  interests and museums.{" "}
+                  Jordan, Petra • 7 days Start your Eastern Europe trip from
+                  Berlin – one of the most attractive European cities. Head out
+                  to Warsaw – the capital of Poland, where you’ll be able to
+                  take a guided tour through the city’s places of interests and
+                  museums.{" "}
                 </p>
                 <p>
                   <Button bsStyle="primary">More</Button>
@@ -99,11 +99,11 @@ export default class Home extends Component {
               <Thumbnail src="assets/img/places/morocco.jpg" alt="242x200">
                 <h3>Morocco</h3>
                 <p>
-                  Morocco, Rabat • 12 days Start your Eastern Europe
-                  trip from Berlin – one of the most attractive European cities.
-                  Head out to Warsaw – the capital of Poland, where you’ll be
-                  able to take a guided tour through the city’s places of
-                  interests and museums.{" "}
+                  Morocco, Rabat • 12 days Start your Eastern Europe trip from
+                  Berlin – one of the most attractive European cities. Head out
+                  to Warsaw – the capital of Poland, where you’ll be able to
+                  take a guided tour through the city’s places of interests and
+                  museums.{" "}
                 </p>
                 <p>
                   <Button bsStyle="primary">More</Button>

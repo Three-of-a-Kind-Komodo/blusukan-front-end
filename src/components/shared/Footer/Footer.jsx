@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Image, Grid, Row, Col } from "react-bootstrap";
-import "../../Styles/footer.css";
+import "./footer.css";
 
 export default class Navigation extends Component {
   render() {

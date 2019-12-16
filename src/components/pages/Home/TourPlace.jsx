@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Thumbnail, Grid, Col, Image, Button, Row } from "react-bootstrap";
-import "../Styles/home.css";
+import "./home.css";
 
 export default class TourPlace extends Component {
   render() {
@@ -9,7 +9,10 @@ export default class TourPlace extends Component {
       <Grid>
         <Row className="show-grid text-center">
           <Col xs={12} sm={4} className="place">
-            <Thumbnail src="assets/img/places/Monumen Selamat Datang.png" alt="242x200">
+            <Thumbnail
+              src="assets/img/places/Monumen Selamat Datang.png"
+              alt="242x200"
+            >
               <h3>Monumen Selamat Datang</h3>
               <p>
                 Madrid, Barcelona • 9 days Start your Eastern Europe trip from
@@ -24,7 +27,10 @@ export default class TourPlace extends Component {
           </Col>
 
           <Col xs={12} sm={4} className="place">
-            <Thumbnail src="assets/img/places/Theater Schouwburg Weltevreden.png" alt="242x200">
+            <Thumbnail
+              src="assets/img/places/Theater Schouwburg Weltevreden.png"
+              alt="242x200"
+            >
               <h3>Theater Schouwburg Weltevreden</h3>
               <p>
                 England, Scotland, Wales • 13 days Start your Eastern Europe
@@ -40,7 +46,10 @@ export default class TourPlace extends Component {
           </Col>
 
           <Col xs={12} sm={4} className="place">
-            <Thumbnail src="assets/img/places/Monumen Nasional.png" alt="242x200">
+            <Thumbnail
+              src="assets/img/places/Monumen Nasional.png"
+              alt="242x200"
+            >
               <h3>Monumen Nasional</h3>
               <p>
                 Istanbul, Antalya, Ephesus • 8 days Start your Eastern Europe

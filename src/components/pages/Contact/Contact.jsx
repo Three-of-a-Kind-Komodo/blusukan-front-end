@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Grid, Col, Image, Row } from "react-bootstrap";
 import FormContact from "./FormContact";
 
-import "../Styles/contact.css";
+import "./contact.css";
 export default class Home extends Component {
   render() {
     return (

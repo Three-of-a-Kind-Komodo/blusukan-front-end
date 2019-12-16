@@ -65,7 +65,7 @@ export default class About extends Component {
                 <Image
                   src="/assets/img/person1.jpg"
                   circle
-                  className="profile-pic"
+                  className="profile-pic rotate"
                 />
                 <h3>Sofyan Agus Salim</h3>
                 <h5>Leader and Full Stack Developer</h5>
@@ -80,7 +80,7 @@ export default class About extends Component {
                 <Image
                   src="/assets/img/person2.jpg"
                   circle
-                  className="profile-pic"
+                  className="profile-pic rotate"
                 />
                 <h3>Muhammad Faris Ibrahim</h3>
                 <h5>Front End Developer</h5>
@@ -94,7 +94,7 @@ export default class About extends Component {
                 <Image
                   src="/assets/img/person3.jpg"
                   circle
-                  className="profile-pic"
+                  className="profile-pic rotate"
                 />
                 <h3>Bagus Suryadi</h3>
                 <h5>Front End Developer</h5>

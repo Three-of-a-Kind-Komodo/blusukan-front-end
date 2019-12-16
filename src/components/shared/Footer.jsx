@@ -17,11 +17,11 @@ export default class Navigation extends Component {
                     className="social-icon"
                   />
                   <Image
-                    src="/assets/img/logo_twiter.png"
+                    src="/assets/img/logo_twitter.png"
                     className="social-icon"
                   />
                   <Image
-                    src="/assets/img/logo_google+.png"
+                    src="/assets/img/logo_github.png"
                     className="social-icon"
                   />
                   <Image

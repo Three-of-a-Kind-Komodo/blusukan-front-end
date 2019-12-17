@@ -39,13 +39,32 @@ export default class Navigation extends Component {
             <NavItem
               eventKey={4}
               componentClass={Link}
+              href="/culinary"
+              to="/culinary"
+            >
+              Culinary
+            </NavItem>
+            <NavItem eventKey={5} componentClass={Link} href="/stay" to="/stay">
+              Stay
+            </NavItem>
+            <NavItem
+              eventKey={6}
+              componentClass={Link}
               href="/contact"
               to="/contact"
             >
               Contact
             </NavItem>
             <NavItem
-              eventKey={5}
+              eventKey={7}
+              componentClass={Link}
+              href="/add-content"
+              to="/add-content"
+            >
+              Add Content
+            </NavItem>
+            <NavItem
+              eventKey={8}
               componentClass={Link}
               href="/login"
               to="/login"

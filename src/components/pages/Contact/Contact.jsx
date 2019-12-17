@@ -9,17 +9,18 @@ export default class Home extends Component {
     return (
       <div>
         <div className="content-wrapper">
-          <Image src="/assets/img/contact.jpg" />
+          <Image src="/assets/img/contact.jpg" className="cover" />
           <h2 className="heading">Contact Us</h2>
         </div>
         <Grid>
-          <Row>
+          <Row className="map-row">
             <Iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.997688425974!2d106.81591525089043!3d-6.264032763048013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f229efe437bd%3A0x6415aed5b40e601e!2sNomad%20Hostel%20Kemang%20-%20Jakarta!5e0!3m2!1sen!2sid!4v1576561366275!5m2!1sen!2sid"
               width="100%"
               height="450"
               frameborder="0"
               allowfullscreen=""
+              className="map-frame"
             />
           </Row>
         </Grid>

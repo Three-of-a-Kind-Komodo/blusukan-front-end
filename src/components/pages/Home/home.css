@@ -40,3 +40,11 @@ h3 {
   margin-top: 15px;
   margin-bottom: 55px;
 }
+
+.testimonial-wrapper {
+  background-color: #d8d8d8;
+}
+
+.mb-standard {
+  margin-bottom: 2em;
+}

@@ -106,35 +106,27 @@ class TourPlaceItems extends Component {
     }
     return (
       <div>
-        {/* <Row className="show-grid text-center row-eq-height">
-          {contents &&
-            contents.map((data, index) => (
-              <Col xs={12} sm={4} className="place" key={index}>
-                <Thumbnail className="crop">
-                  <Image src={data.imageurl} fluid />
-
-                  <h3>{data.title}</h3> */}
-        {/* <Rater total={} rating={} interactive={} onRate={} onRating={} /> */}
-        {/* <Rater total={5} rating={data.rating} interactive={false} />
-                </Thumbnail>
-              </Col>
-            ))}
-        </Row> */}
-
         <Row className="place">
           <Slider {...settings}>
             {contents &&
-              contents.map((data, index) => (
-                <Col xs={12} sm={4} className="place" key={index}>
-                  <Thumbnail className="crop">
-                    <Image src={data.imageurl} fluid />
+              contents.map(
+                (data, index) =>
+                  data.type === this.props.contentType && (
+                    <Col xs={12} sm={4} className="place" key={index}>
+                      <Thumbnail className="crop">
+                        <Image src={data.imageurl} fluid />
 
-                    <h3>{data.title}</h3>
-                    {/* <Rater total={} rating={} interactive={} onRate={} onRating={} /> */}
-                    <Rater total={5} rating={data.rating} interactive={false} />
-                  </Thumbnail>
-                </Col>
-              ))}
+                        <h3>{data.title}</h3>
+                        {/* <Rater total={} rating={} interactive={} onRate={} onRating={} /> */}
+                        <Rater
+                          total={5}
+                          rating={data.rating}
+                          interactive={false}
+                        />
+                      </Thumbnail>
+                    </Col>
+                  )
+              )}
           </Slider>
         </Row>
       </div>

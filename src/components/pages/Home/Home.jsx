@@ -24,15 +24,15 @@ export default class Home extends Component {
           </div>
           <h2>Landmark</h2>
           <hr />
-          <TourPlace />
+          <TourPlace contentType={"Landmark"} />
 
           <h2>Culinary</h2>
           <hr />
-          <TourPlace />
+          <TourPlace contentType={"Culinary"} />
 
           <h2>Stay</h2>
           <hr />
-          <TourPlace />
+          <TourPlace contentType={"Landmark"} />
         </Grid>
         <Grid fluid className="testimonial-wrapper">
           <Row className="show-grid text-center ">

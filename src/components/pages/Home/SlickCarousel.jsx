@@ -8,6 +8,7 @@ export default class SlickCarousel extends Component {
     const settings = {
       dots: true,
       infinite: true,
+      arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,

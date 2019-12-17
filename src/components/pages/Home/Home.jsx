@@ -29,7 +29,7 @@ export default class Home extends Component {
         {/* <HomePageCarousel /> */}
         <SlickCarousel />
 
-        <Grid>
+        <Grid className="mb-standard">
           <div className="banner text-center">
             <h1>The best city tours you can choose</h1>
             <p>
@@ -51,15 +51,17 @@ export default class Home extends Component {
           <h2>Stay</h2>
           <hr />
           <TourPlace />
-
-          <Row className="show-grid text-center">
+        </Grid>
+        <Grid fluid className="testimonial-wrapper">
+          <Row className="show-grid text-center ">
             <div className="testimonial">
               <h1 className="text-center"> What They Say</h1>
               <h5 className="text-center">
                 Our testimonials are the best proof of our high level of service
               </h5>
-            </div>
-
+            </div>{" "}
+          </Row>
+          <Grid className="show-grid text-center ">
             <Col xs={12} sm={4} className="person-wrapper">
               <Image
                 src="/assets/img/testimony/Haji_senin_bin_kamis.jpg"
@@ -97,7 +99,7 @@ export default class Home extends Component {
               <h3>Bang Tommy</h3>
               <p>“Saya akan kembali ke website ini lagi!” </p>
             </Col>
-          </Row>
+          </Grid>
         </Grid>
       </div>
     );

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Thumbnail, Row, Col, Image, Button } from "react-bootstrap";
 import Rater from "react-rater";
 
+import Map from "./Map";
+
 class Landmarkitems extends Component {
   constructor(props) {
     super(props);
@@ -68,6 +70,7 @@ class Landmarkitems extends Component {
                     Direction
                   </a>
                 </Button>
+                <Map />
               </Thumbnail>
             </Col>
           ))}

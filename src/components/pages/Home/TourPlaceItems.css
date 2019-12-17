@@ -1,0 +1,26 @@
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crop {
+  overflow: hidden;
+  height: 100%;
+}
+
+.crop img {
+  width: auto;
+  height: 300px;
+  margin: -200px 0 0 -100px;
+}
+
+.place {
+  margin-bottom: 1.5em;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: gray;
+}

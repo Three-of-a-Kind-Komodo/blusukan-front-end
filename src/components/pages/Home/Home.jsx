@@ -51,44 +51,40 @@ export default class Home extends Component {
 
             <Col xs={12} sm={4} className="person-wrapper">
               <Image
-                src="/assets/img/testimony/p1.jpg"
+                src="/assets/img/testimony/Haji_senin_bin_kamis.jpg"
                 circle
                 className="profile-pic"
               />
-              <h3>Mari Johnson</h3>
+              <h3>Haji Senin bin Kamis</h3>
               <p>
-                “viverra nam libero justo laoreet sit amet cursus sit amet
-                dictum sit amet justo donec enim diam vulputate ut pharetra sit
-                amet aliquam id diam maecenas ultricies mi eget mauris.”{" "}
+                “Baru tahu saya kalo di pulau seribu nama pulaunya tidak diurut
+                sesuai nomornya, dan masih banyak yang baru saya tahu dari
+                website ini”{" "}
               </p>
             </Col>
 
             <Col xs={12} sm={4} className="person-wrapper">
               <Image
-                src="/assets/img/testimony/p2.jpg"
+                src="/assets/img/testimony/Ria_ricis.jpg"
                 circle
                 className="profile-pic"
               />
-              <h3>James Anderson</h3>
+              <h3>Ria Ricis</h3>
               <p>
-                “viverra nam libero justo laoreet sit amet cursus sit amet
-                dictum sit amet justo donec enim diam vulputate ut pharetra sit
-                amet aliquam id diam maecenas ultricies mi eget mauris.”
+                “Di Blusukan.com saya bisa lebih percaya dengan ulasan para
+                local guide yang budiman, saya berharap dengan website ini lebih
+                banyak orang yang akan mudah berlibur tanpa khawatir”
               </p>
             </Col>
 
             <Col xs={12} sm={4} className="person-wrapper">
               <Image
-                src="/assets/img/testimony/p3.jpg"
+                src="/assets/img/testimony/Thomas_alva_edison.jpg"
                 circle
                 className="profile-pic"
               />
-              <h3>Becka Steward</h3>
-              <p>
-                “viverra nam libero justo laoreet sit amet cursus sit amet
-                dictum sit amet justo donec enim diam vulputate ut pharetra sit
-                amet aliquam id diam maecenas ultricies mi eget mauris.”{" "}
-              </p>
+              <h3>Bang Tommy</h3>
+              <p>“Saya akan kembali ke website ini lagi!” </p>
             </Col>
           </Row>
         </Grid>

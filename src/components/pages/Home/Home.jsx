@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Jumbotron, Grid, Col, Image, Button, Row } from "react-bootstrap";
+import { Grid, Col, Image, Row } from "react-bootstrap";
 
 import SlickCarousel from "./SlickCarousel";
 import TourPlace from "./TourPlace";

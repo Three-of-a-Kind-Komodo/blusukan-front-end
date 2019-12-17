@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Image, Grid, Row, Col } from "react-bootstrap";
 import "./footer.css";
 

@@ -31,14 +31,25 @@ export default class Home extends Component {
 
         <Grid className="mb-standard">
           <div className="banner text-center">
-            <h2>The best city tours you can choose</h2>
+            <h1>The best city tours you can choose</h1>
             <p>
-              We are committed to offering city tours info of the highest
-              quality, combining our energy and enthusiasm with years of
-              experience.
+              <em>
+                We are committed to offering city tours info of the highest
+                quality, combining our energy and enthusiasm with years of
+                experience.
+              </em>
             </p>
           </div>
+          <h2>Landmark</h2>
+          <hr />
+          <TourPlace />
 
+          <h2>Culinary</h2>
+          <hr />
+          <TourPlace />
+
+          <h2>Stay</h2>
+          <hr />
           <TourPlace />
         </Grid>
         <Grid fluid className="testimonial-wrapper">

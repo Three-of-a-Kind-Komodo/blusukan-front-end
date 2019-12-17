@@ -20,7 +20,7 @@
 
 .carousel-title {
   bottom: 0;
-  height: 450px;
+  height: 70%;
   min-height: 10vh;
   left: 0;
   position: absolute;
@@ -37,7 +37,6 @@
 
 .carousel-captions {
   bottom: 0;
-  height: 240px;
   min-height: 10vh;
   left: 0;
   position: absolute;

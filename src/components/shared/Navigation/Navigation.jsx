@@ -10,7 +10,7 @@ export default class Navigation extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">
-              <Image className="logo" src="/assets/logo.png" />{" "}
+              <h3>Blusukan.com</h3>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle />
@@ -43,6 +43,14 @@ export default class Navigation extends Component {
               to="/contact"
             >
               Contact
+            </NavItem>
+            <NavItem
+              eventKey={5}
+              componentClass={Link}
+              href="/login"
+              to="/login"
+            >
+              Login
             </NavItem>
           </Nav>
         </Navbar.Collapse>

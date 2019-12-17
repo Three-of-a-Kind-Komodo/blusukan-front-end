@@ -40,3 +40,21 @@ h3 {
   margin-top: 15px;
   margin-bottom: 55px;
 }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crop {
+  overflow: hidden;
+  height: 100%;
+}
+
+.crop img {
+  width: auto;
+  height: 300px;
+  margin: -200px 0 0 -100px;
+}

@@ -49,6 +49,7 @@ class TourPlaceItems extends Component {
               <Col xs={12} sm={4} className="place" key={index}>
                 <Thumbnail className="crop">
                   <Image src={data.imageurl} fluid />
+
                   <h3>{data.title}</h3>
                   {/* <Rater total={} rating={} interactive={} onRate={} onRating={} /> */}
                   <Rater total={5} rating={data.rating} interactive={false} />

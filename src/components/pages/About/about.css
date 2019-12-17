@@ -1,52 +1,58 @@
-
-.content-wrapper{
-    width: 100%;
-    position: relative;
-    margin-bottom: 2%;
+.content-wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2%;
 }
 
-.content-wrapper img{
-    width: 100%;    
+.content-wrapper img {
+  width: 100%;
 }
 
-.heading{
-    position: absolute;
-    color: rgb(224, 224, 224);
-    top: 50%;
-    text-align: center;
-    width: 100%;
-    font-size: 5rem;
+.heading {
+  position: absolute;
+  color: rgb(224, 224, 224);
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  font-size: 5rem;
 }
 
-.header-img{
-    width: 100%;
-    margin-top: -2em;
-    margin-bottom: 2em;
+.header-img {
+  width: 100%;
+  margin-top: -2em;
+  margin-bottom: 2em;
 }
 
-.about-pc{
-    float:left;
-    margin: 0 1em 1em 0;
-    width: 50%
+.about-pc {
+  float: left;
+  margin: 0 1em 1em 0;
+  width: 50%;
 }
 
-.team{
-    background-color: rgb(216, 216, 216);
-    height: 80vh;
+.team {
+  background-color: rgb(216, 216, 216);
+  height: 80vh;
 }
 
-.profile-pic{
-    object-fit: cover;
-    object-position: 60% 30%;
-  
-    width: 100px;
-    height: 100px;
-    border: 0;
-    padding: 0;
-    margin: 0;
+.profile-pic {
+  object-fit: cover;
+  object-position: 60% 30%;
+
+  width: 100px;
+  height: 100px;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .rotate {
   transform: rotate(270deg) translateY(-100%);
   transform-origin: top right;
+}
+
+.cover {
+  width: 100%;
+  object-fit: cover;
+  max-height: 70vh;
+  height: 950px;
 }

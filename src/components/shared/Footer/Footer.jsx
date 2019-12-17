@@ -21,7 +21,7 @@ export default class Navigation extends Component {
                     className="social-icon"
                   />
                   <Image
-                    src="/assets/img/logo_github.png"
+                    src="/assets/img/logo_instagram.png"
                     className="social-icon"
                   />
                   <Image

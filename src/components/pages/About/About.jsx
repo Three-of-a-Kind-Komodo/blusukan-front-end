@@ -8,7 +8,7 @@ export default class About extends Component {
     return (
       <div>
         <div className="content-wrapper">
-          <Image src="/assets/img/about.jpg" />
+          <Image src="/assets/img/about.jpg" className="cover" />
           <h2 className="heading">About Us </h2>
         </div>
         <Grid>
@@ -99,9 +99,8 @@ export default class About extends Component {
                 <h3>Bagus Suryadi</h3>
                 <h5>Front End Developer</h5>
                 <p>
-                  “viverra nam libero justo laoreet sit amet cursus sit amet
-                  dictum sit amet justo donec enim diam vulputate ut pharetra
-                  sit amet aliquam id diam maecenas ultricies mi eget mauris.”{" "}
+                  “Monogamus is a teamplayer who could carry on many roles in a
+                  day's work, absolutely essential in any kind of team project”{" "}
                 </p>
               </Col>
             </Row>

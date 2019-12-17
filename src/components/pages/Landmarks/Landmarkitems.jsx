@@ -6,6 +6,7 @@ import Rater from "react-rater";
 
 import Map from "./Map";
 
+import "./LandmarkItems.css";
 class Landmarkitems extends Component {
   constructor(props) {
     super(props);
@@ -46,12 +47,12 @@ class Landmarkitems extends Component {
       return <div>Loading.....</div>;
     }
     return (
-      <Row className="show-grid text-center row-eq-height">
+      <Row>
         {contents &&
           contents.map((data, index) => (
             <Col xs={12} sm={4} className="place" key={index}>
-              <Thumbnail className="crop portrait">
-                <Image src={data.imageurl} fluid="true" />
+              <Thumbnail className="crop">
+                <Image src={data.imageurl} fluid className="zoom" />
                 <h3 style={{ padding: 0 }}>{data.title}</h3>
                 {/* <Rater total={} rating={} interactive={} onRate={} onRating={} /> */}
                 <Rater total={5} rating={data.rating} interactive={false} />

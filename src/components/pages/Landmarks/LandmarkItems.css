@@ -25,3 +25,23 @@
 .slick-prev:before {
   color: gray;
 }
+
+.portrait {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.portrait img {
+  transition: transform 1s linear;
+}
+
+.portrait:hover img {
+  transform: scale(1.1);
+}
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5) translate(0, -15%);
+}

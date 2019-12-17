@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import { Link } from "react-router-dom";
 import { Thumbnail, Row, Col, Image } from "react-bootstrap";
 import Rater from "react-rater";
 
@@ -51,6 +52,10 @@ class Landmarkitems extends Component {
                 <h3>{data.title}</h3>
                 {/* <Rater total={} rating={} interactive={} onRate={} onRating={} /> */}
                 <Rater total={5} rating={data.rating} interactive={false} />
+                <br />
+                <button>
+                  <a href="https://goo.gl/maps/b86Ey9UKj2roDbxV9">Direction</a>
+                </button>
               </Thumbnail>
             </Col>
           ))}

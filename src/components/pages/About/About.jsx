@@ -56,7 +56,7 @@ export default class About extends Component {
 
         <Grid fluid className="team">
           <h1 className="text-center">Our team</h1>
-          <h5 className="text-center">
+          <h5 className="text-center mb-4">
             An experienced team of people passionate about traveling
           </h5>
           <Grid>

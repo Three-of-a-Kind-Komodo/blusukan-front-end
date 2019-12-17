@@ -21,7 +21,7 @@ export default class SlickCarousel extends Component {
           <div className="carousel-item">
             <div className="image-filter" />
             <img
-              src="http://menara62.com/wp-content/uploads/2019/09/monas.jpg"
+              src="http://yesofcorsa.com/wp-content/uploads/2019/04/Jakarta-Wallpaper.jpg"
               alt="First Slide"
               className="carousel-image"
             />

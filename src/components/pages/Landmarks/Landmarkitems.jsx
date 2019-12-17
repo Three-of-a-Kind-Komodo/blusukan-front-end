@@ -48,7 +48,7 @@ class Landmarkitems extends Component {
         {contents &&
           contents.map((data, index) => (
             <Col xs={12} sm={4} className="place" key={index}>
-              <Thumbnail className="crop">
+              <Thumbnail className="crop portrait">
                 <Image src={data.imageurl} fluid="true" />
                 <h3 style={{ padding: 0 }}>{data.title}</h3>
                 {/* <Rater total={} rating={} interactive={} onRate={} onRating={} /> */}

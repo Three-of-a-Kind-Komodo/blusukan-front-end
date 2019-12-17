@@ -33,3 +33,16 @@
   margin-top: -2em;
   margin-bottom: 2em;
 }
+
+.portrait {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.portrait img {
+  transition: transform 1s linear;
+}
+
+.portrait:hover img {
+  transform: scale(1.1);
+}

@@ -87,7 +87,7 @@ class AddContent extends Component {
                       {data.type}
                     </td>
                     <td width={150}>{data.title}</td>
-                    <td>{data.content.slice(0, 250) + " (...)"}</td>
+                    <td>{data.content.slice(0, 300) + " ..."}</td>
                     <td width={150}>
                       <Button
                         bsStyle="primary"

@@ -1,10 +1,27 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { Navbar, Nav, NavItem, Image } from "react-bootstrap";
+import { clientAuth } from "../../helpers/auth";
+
 import "./navigation.css";
 
-export default class Navigation extends Component {
+class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isAuthenticated: null
+    };
+  }
+  logout = () => {
+    clientAuth.logout(() => {
+      this.props.history.push("/");
+    });
+    localStorage.removeItem("token");
+  };
+
   render() {
+    console.log(this.state.isAuthenticated);
+    this.state.isAuthenticated = localStorage.getItem("isAuthenticated");
     return (
       <Navbar fixedTop default collapseOnSelect>
         <Navbar.Header>
@@ -55,25 +72,42 @@ export default class Navigation extends Component {
             >
               Contact
             </NavItem>
-            <NavItem
-              eventKey={7}
-              componentClass={Link}
-              href="/add-content"
-              to="/add-content"
-            >
-              Add Content
-            </NavItem>
-            <NavItem
-              eventKey={8}
-              componentClass={Link}
-              href="/login"
-              to="/login"
-            >
-              Login
-            </NavItem>
+
+            {this.state.isAuthenticated ? (
+              <>
+                <NavItem
+                  eventKey={7}
+                  componentClass={Link}
+                  href="/add-content"
+                  to="/add-content"
+                >
+                  Add Content
+                </NavItem>
+                <NavItem
+                  eventKey={8}
+                  onClick={this.logout}
+                  // componentClass={Link}
+                  // href="/login"
+                  // to="/login"
+                >
+                  logout
+                </NavItem>
+              </>
+            ) : (
+              <NavItem
+                eventKey={8}
+                componentClass={Link}
+                href="/login"
+                to="/login"
+              >
+                Login
+              </NavItem>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     );
   }
 }
+
+export default withRouter(Navigation);

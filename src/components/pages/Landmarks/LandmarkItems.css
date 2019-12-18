@@ -14,7 +14,7 @@
 
 .crop img {
   width: auto;
-  height: 300px;
+  max-height: 300px;
   margin: -200px 0 0 -100px;
 }
 

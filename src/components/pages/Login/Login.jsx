@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { withRouter } from "react-router";
+
+import { clientAuth } from "../../helpers/auth";
+
 import "./login.css";
 
 function Login(props) {
   const [user, setUser] = useState({ email: "", password: "" });
   const [error, setError] = useState(null);
   const [result, setResult] = useState(null);
+
+  const history = useHistory();
+
+  const login = () => {
+    clientAuth.authentication(() => {
+      history.replace("/");
+    });
+  };
 
   const handleChange = event => {
     setUser({
@@ -22,7 +33,9 @@ function Login(props) {
       .post(`https://blusukan.herokuapp.com/users/login`, user)
       .then(result => {
         localStorage.setItem("token", result.data.token);
-        props.history.push("/");
+        login();
+        // clientAuth.authentication();
+        // console.log(clientAuth.isAuthenticated);
       })
       .catch(error => {
         if (error.response.data) {

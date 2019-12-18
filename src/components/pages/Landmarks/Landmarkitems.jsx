@@ -58,7 +58,8 @@ class Landmarkitems extends Component {
                     <h3 style={{ padding: 0 }}>{data.title}</h3>
                     <Rater total={5} rating={data.rating} interactive={false} />
                     <br /> <br />
-                    <Link to="/landmarks-detil">
+                    <Link to={`/landmarks-detil/${data._id}`}>
+                      {/* <Link to="/landmarks-detil"> */}
                       <Button bsStyle="primary">Read More</Button>
                     </Link>
                     <Button bsStyle="primary" style={{ marginLeft: 5 }}>
@@ -72,7 +73,7 @@ class Landmarkitems extends Component {
                         Direction
                       </a>
                     </Button>
-                    <Map />
+                    {/* <Map /> */}
                   </Thumbnail>
                 </Col>
               )

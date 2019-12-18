@@ -6,8 +6,10 @@ import "react-rater/lib/react-rater.css";
 import {
   Home,
   Landmarks,
+  LandmarkDetil,
   About,
   Contact,
+  AddContent,
   Login,
   SignUp
 } from "./components/pages";
@@ -21,11 +23,13 @@ class App extends Component {
         <div>
           <Navigation />
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/landmarks" component={Landmarks} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/login" component={Login} />
-          <Route path="/sign-up" component={SignUp} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/landmarks" component={Landmarks} />
+          <Route path="/landmarks-detil/:id" component={LandmarkDetil} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/add-content" component={AddContent} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/sign-up" component={SignUp} />
           <Footer />
         </div>
       </Router>

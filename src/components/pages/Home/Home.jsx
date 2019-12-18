@@ -22,15 +22,21 @@ export default class Home extends Component {
               </em>
             </p>
           </div>
-          <h2>Landmark</h2>
+          <h2>
+            <i class="fas fa-map-marked-alt"></i> Landmark
+          </h2>
           <hr />
           <TourPlace contentType={"Landmark"} />
 
-          <h2>Culinary</h2>
+          <h2>
+            <i class="fas fa-mortar-pestle"></i> Culinary
+          </h2>
           <hr />
           <TourPlace contentType={"Culinary"} />
 
-          <h2>Stay</h2>
+          <h2>
+            <i class="fas fa-bed"></i> Stay
+          </h2>
           <hr />
           <TourPlace contentType={"Landmark"} />
         </Grid>
@@ -41,7 +47,7 @@ export default class Home extends Component {
               <h5 className="text-center">
                 Our testimonials are the best proof of our high level of service
               </h5>
-            </div>{" "}
+            </div>
           </Row>
           <Grid className="show-grid text-center ">
             <Col xs={12} sm={4} className="person-wrapper">

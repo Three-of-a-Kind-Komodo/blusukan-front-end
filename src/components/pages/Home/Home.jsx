@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Jumbotron, Grid, Col, Image, Button, Row } from "react-bootstrap";
+import { Grid, Col, Image, Row } from "react-bootstrap";
 
 import SlickCarousel from "./SlickCarousel";
 import TourPlace from "./TourPlace";
@@ -23,17 +22,23 @@ export default class Home extends Component {
               </em>
             </p>
           </div>
-          <h2>Landmark</h2>
+          <h2>
+            <i class="fas fa-map-marked-alt"></i> Landmark
+          </h2>
           <hr />
-          <TourPlace />
+          <TourPlace contentType={"Landmark"} />
 
-          <h2>Culinary</h2>
+          <h2>
+            <i class="fas fa-mortar-pestle"></i> Culinary
+          </h2>
           <hr />
-          <TourPlace />
+          <TourPlace contentType={"Culinary"} />
 
-          <h2>Stay</h2>
+          <h2>
+            <i class="fas fa-bed"></i> Stay
+          </h2>
           <hr />
-          <TourPlace />
+          <TourPlace contentType={"Landmark"} />
         </Grid>
         <Grid fluid className="testimonial-wrapper">
           <Row className="show-grid text-center ">
@@ -42,7 +47,7 @@ export default class Home extends Component {
               <h5 className="text-center">
                 Our testimonials are the best proof of our high level of service
               </h5>
-            </div>{" "}
+            </div>
           </Row>
           <Grid className="show-grid text-center ">
             <Col xs={12} sm={4} className="person-wrapper">

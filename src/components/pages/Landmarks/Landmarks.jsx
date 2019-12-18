@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Thumbnail, Grid, Col, Image, Button, Row } from "react-bootstrap";
+import { Grid, Image } from "react-bootstrap";
 import "./landmarks.css";
 import Landmarkitems from "./Landmarkitems";
 

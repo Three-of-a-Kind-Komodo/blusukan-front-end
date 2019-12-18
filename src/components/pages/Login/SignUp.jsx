@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
+import "./signup.css";
 
 function SignUp(props) {
   const [newUser, setNewUser] = useState({

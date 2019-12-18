@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Grid, Col, Image, Button, Row } from "react-bootstrap";
+import { Grid, Col, Image, Row } from "react-bootstrap";
 import "./about.css";
 
 export default class About extends Component {

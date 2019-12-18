@@ -7,7 +7,7 @@ export default class TourPlace extends Component {
   render() {
     return (
       <Grid>
-        <TourPlaceItems />
+        <TourPlaceItems contentType={this.props.contentType} />
       </Grid>
     );
   }

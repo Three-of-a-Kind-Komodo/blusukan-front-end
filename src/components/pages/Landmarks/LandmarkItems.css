@@ -39,7 +39,7 @@
   transform: scale(1.1);
 }
 .zoom {
-  transition: transform 0.2s;
+  transition: transform 2s;
 }
 
 .zoom:hover {

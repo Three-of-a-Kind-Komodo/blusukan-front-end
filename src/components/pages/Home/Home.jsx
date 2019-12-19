@@ -38,7 +38,7 @@ export default class Home extends Component {
             <i class="fas fa-bed"></i> Stay
           </h2>
           <hr />
-          <TourPlace contentType={"Landmark"} />
+          <TourPlace contentType={"Stay"} />
         </Grid>
         <Grid fluid className="testimonial-wrapper">
           <Row className="show-grid text-center ">

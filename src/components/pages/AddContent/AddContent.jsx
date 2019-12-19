@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { withRouter, Link } from "react-router-dom";
 import { Grid, Image, Row, Col, Button } from "react-bootstrap";
 import axios from "axios";
 import "./AddContent.css";
+
+import BtnAdd from "./BtnAdd";
+import { URI } from "../../helpers/path";
 
 class AddContent extends Component {
   constructor(props) {
@@ -11,7 +13,7 @@ class AddContent extends Component {
   }
   componentDidMount() {
     axios
-      .get("https://blusukan.herokuapp.com/contents")
+      .get(URI + "/contents")
       .then(response => {
         this.setState({ contents: response.data.result });
         console.log(response.data.result);
@@ -79,24 +81,27 @@ class AddContent extends Component {
                 height: 70
               }}
             >
-              <Button bsStyle="primary">Add Content</Button>
+              {/* <Button bsStyle="primary">Add Content</Button> */}
+              <BtnAdd addEdit={"add"} />
             </Col>
           </Row>
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
-                <th>Image</th>
-                <th>Type</th>
-                <th>Title</th>
-                <th>Content</th>
-                <th colSpan="2">Action</th>
+                <th style={{ textAlign: "center" }}>Image</th>
+                <th style={{ textAlign: "center" }}>Type</th>
+                <th style={{ textAlign: "center" }}>Title</th>
+                {/* <th>Content</th> */}
+                <th colSpan="2" style={{ textAlign: "center" }}>
+                  Action
+                </th>
               </tr>
             </thead>
             <tbody>
               {contents &&
                 contents.map((data, index) => (
                   <tr key={index}>
-                    <td width={70}>
+                    <td width={70} style={{ textAlign: "center" }}>
                       <Image src={data.imageurl} height={64} width={64} />
                     </td>
                     <td width={80} align={"center"}>
@@ -113,18 +118,29 @@ class AddContent extends Component {
                       {data.type}
                     </td>
                     <td width={150}>{data.title}</td>
-                    <td>{data.content.slice(0, 300) + " ..."}</td>
-                    <td width={150}>
+                    {/* <td>{data.content}</td> */}
+                    <td width={150} align={"center"}>
                       <Button
                         bsStyle="primary"
-                        style={{ backgroundColor: "orange" }}
+                        style={{
+                          backgroundColor: "orange",
+                          width: 75,
+                          marginLeft: 5,
+                          marginRight: 5
+                        }}
                         onClick={() => this.getRowData(data)}
                       >
                         Edit
                       </Button>
+
                       <Button
                         bsStyle="primary"
-                        style={{ backgroundColor: "red", marginLeft: 10 }}
+                        style={{
+                          backgroundColor: "red",
+                          marginLeft: 5,
+                          marginRight: 5,
+                          width: 75
+                        }}
                         onClick={() => this.getRowData(data)}
                       >
                         Hapus

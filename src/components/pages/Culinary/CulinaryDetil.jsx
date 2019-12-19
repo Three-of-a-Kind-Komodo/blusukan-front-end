@@ -4,6 +4,7 @@ import axios from "axios";
 import { Grid, Image, Row, Col, Button } from "react-bootstrap";
 import Rater from "react-rater";
 import "./culinary.css";
+import Iframe from "react-iframe";
 
 class CulinaryDetil extends Component {
   constructor(props) {
@@ -66,6 +67,16 @@ class CulinaryDetil extends Component {
           </Button>
 
           <Row>
+            <Col md={12} lg={12} style={{ marginBottom: 20 }}>
+              <Iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.061313803941!2d106.84123585088932!3d-6.122450461719329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e3d05306511%3A0x820b6f7432af7bcd!2sBandar%20Djakarta!5e0!3m2!1sen!2sid!4v1576728012670!5m2!1sen!2sid"
+                width="600"
+                height="450"
+                frameborder="0"
+                allowfullscreen=""
+                className="map-frame"
+              ></Iframe>
+            </Col>
             <Col md={12} lg={4}>
               <Image
                 src={contents.imageurl}

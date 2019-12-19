@@ -68,7 +68,7 @@ class LandmarkDetil extends Component {
           <Row>
             <Col md={12} lg={12} style={{ marginBottom: 20 }}>
               <Iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4719.937673018287!2d106.61711261651463!3d-5.8586223653304454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a0b7f40a74ff7%3A0x8e79fee878c2aff5!2sJl.%20Pantai%20Perawan%2C%20Pulau%20Pari%2C%20Kepulauan%20Seribu%20Sel.%2C%20Kabupaten%20Kepulauan%20Seribu%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014520!5e0!3m2!1sen!2sid!4v1576724105376!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666466960832!2d106.82495875088968!3d-6.175387062212266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1576727909949!5m2!1sen!2sid"
                 width="600"
                 height="450"
                 frameborder="0"

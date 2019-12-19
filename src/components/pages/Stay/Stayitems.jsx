@@ -49,14 +49,14 @@ class Stayitems extends Component {
         {contents &&
           contents.map(
             (data, index) =>
-              data.type === "Landmark" && (
+              data.type === "Stay" && (
                 <Col xs={12} sm={4} className="place" key={index}>
                   <Thumbnail className="crop">
                     <Image src={data.imageurl} fluid className="zoom" />
                     <h3 style={{ padding: 0, marginBottom: 0 }}>
                       {data.title}
                     </h3>
-                    <p style={{ padding: 0 }}>
+                    <p style={{ padding: 0, color: "gray" }}>
                       <em>20km from your position</em>
                     </p>
                     <Rater total={5} rating={data.rating} interactive={false} />

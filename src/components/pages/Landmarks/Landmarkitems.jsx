@@ -58,7 +58,7 @@ class Landmarkitems extends Component {
                     <h3 style={{ padding: 0, marginBottom: 0 }}>
                       {data.title}
                     </h3>
-                    <p style={{ padding: 0 }}>
+                    <p style={{ padding: 0, color: "gray" }}>
                       <em>20km from your position</em>
                     </p>
                     <Rater total={5} rating={data.rating} interactive={false} />

@@ -55,6 +55,11 @@ export default class FormContact extends Component {
       .post(URI + "/contacts", this.state)
       .then(result => {
         console.log(result);
+        this.setState = {
+          name: "",
+          email: "",
+          message: ""
+        };
       })
       .catch(error => {
         console.log(error);

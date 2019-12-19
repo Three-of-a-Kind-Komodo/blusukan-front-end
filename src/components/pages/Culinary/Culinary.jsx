@@ -8,7 +8,7 @@ export default class Culinary extends Component {
     return (
       <div>
         <div className="content-wrapper">
-          <Image src="/assets/img/culinary.jpeg" />
+          <Image src="/assets/img/culinary.jpeg" className="cover" />
           <h2 className="heading">Culinary</h2>
           <h5 className="sub-heading">
             With us you’ll find a perfect food heaven with extraordinary taste

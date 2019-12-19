@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import { Thumbnail, Row, Col, Image, Button } from "react-bootstrap";
 import Rater from "react-rater";
 
-import Map from "./Map";
-
-import "./LandmarkItems.css";
-class Landmarkitems extends Component {
+import "./StayItems.css";
+class Stayitems extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -63,13 +61,11 @@ class Landmarkitems extends Component {
                     </p>
                     <Rater total={5} rating={data.rating} interactive={false} />
                     <br /> <br />
-                    <Link to={`/landmarks-detil/${data._id}`}>
-                      {/* <Link to="/landmarks-detil"> */}
+                    <Link to={`/stay-detil/${data._id}`}>
                       <Button bsStyle="primary">Read More</Button>
                     </Link>
                     <Button bsStyle="primary" style={{ marginLeft: 5 }}>
                       <a
-                        // href="https://goo.gl/maps/b86Ey9UKj2roDbxV9"
                         href={data.mapurl}
                         target="popup"
                         rel="noopener noreferrer"
@@ -78,7 +74,6 @@ class Landmarkitems extends Component {
                         Direction
                       </a>
                     </Button>
-                    {/* <Map /> */}
                   </Thumbnail>
                 </Col>
               )
@@ -87,4 +82,4 @@ class Landmarkitems extends Component {
     );
   }
 }
-export default Landmarkitems;
+export default Stayitems;

@@ -55,7 +55,33 @@ class AddContent extends Component {
           </h5>
         </div>
         <Grid>
-          <h3>List Data ( Username: {userData.user.name})</h3>
+          <Row>
+            <Col
+              xs={12}
+              sm={8}
+              style={{
+                display: "table-cell",
+                verticalAlign: "bottom",
+                height: 70,
+                padding: 0
+              }}
+            >
+              <h3>List Data ( Username: {userData.user.name})</h3>
+            </Col>
+            <Col
+              xs={12}
+              sm={4}
+              style={{
+                textAlign: "right",
+                verticalAlign: "bottom",
+                display: "table-cell",
+                float: "none",
+                height: 70
+              }}
+            >
+              <Button bsStyle="primary">Add Content</Button>
+            </Col>
+          </Row>
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>

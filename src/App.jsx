@@ -7,6 +7,10 @@ import {
   Home,
   Landmarks,
   LandmarkDetil,
+  Culinary,
+  CulinaryDetil,
+  Stay,
+  StayDetil,
   About,
   Contact,
   AddContent,
@@ -26,6 +30,10 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/landmarks" component={Landmarks} />
           <Route path="/landmarks-detil/:id" component={LandmarkDetil} />
+          <Route exact path="/culinary" component={Culinary} />
+          <Route path="/culinary-detil/:id" component={CulinaryDetil} />
+          <Route exact path="/stay" component={Stay} />
+          <Route path="/stay-detil/:id" component={StayDetil} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/add-content" component={AddContent} />
           <Route exact path="/login" component={Login} />

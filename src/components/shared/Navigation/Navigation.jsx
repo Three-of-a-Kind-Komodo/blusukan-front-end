@@ -19,9 +19,17 @@ class Navigation extends Component {
     localStorage.removeItem("token");
   };
 
+  parseJwt(token) {
+    if (!token) {
+      return;
+    }
+    const base64Url = token.split(".")[1];
+    const base64 = base64Url.replace("-", "+").replace("_", "/");
+    return JSON.parse(window.atob(base64));
+  }
   render() {
-    console.log(this.state.isAuthenticated);
     this.state.isAuthenticated = localStorage.getItem("isAuthenticated");
+    const userData = this.parseJwt(localStorage.getItem("token"));
     return (
       <Navbar fixedTop default collapseOnSelect>
         <Navbar.Header>
@@ -90,7 +98,7 @@ class Navigation extends Component {
                   // href="/login"
                   // to="/login"
                 >
-                  logout
+                  Hi, {userData.user.name} !, Logout
                 </NavItem>
               </>
             ) : (

@@ -1,0 +1,47 @@
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crop {
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.crop img {
+  width: auto;
+  max-height: 300px;
+  margin: -200px 0 0 -100px;
+}
+
+.place {
+  margin-bottom: 1.5em;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: gray;
+}
+
+.portrait {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.portrait img {
+  transition: transform 1s linear;
+}
+
+.portrait:hover img {
+  transform: scale(1.1);
+}
+.zoom {
+  transition: transform 2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5) translate(0, -15%);
+}

@@ -3,7 +3,7 @@ import { Grid, Image } from "react-bootstrap";
 import "./landmarks.css";
 import Landmarkitems from "./Landmarkitems";
 
-export default class Home extends Component {
+export default class Landmarks extends Component {
   render() {
     return (
       <div>

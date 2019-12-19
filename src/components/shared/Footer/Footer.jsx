@@ -49,8 +49,8 @@ export default class Navigation extends Component {
                 />
                 <div className="info-footer">
                   <h4> EMAIL</h4>
-                  <p> info@citytours.com</p>
-                  <p>support@citytours.com</p>
+                  <p> 3ofakindkomodo@gmail.com</p>
+                  <p>support@3ofakindkomodo.com</p>
                 </div>
               </Col>
 

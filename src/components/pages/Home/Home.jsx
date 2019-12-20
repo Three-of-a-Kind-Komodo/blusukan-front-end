@@ -13,10 +13,10 @@ export default class Home extends Component {
 
         <Grid className="mb-standard">
           <div className="banner text-center">
-            <h1>The best city tours you can choose</h1>
+            <h1>The best tours guidance you can choose</h1>
             <p>
               <em>
-                We are committed to offering city tours info of the highest
+                We are committed to offering tour guidance info of the highest
                 quality, combining our energy and enthusiasm with years of
                 experience.
               </em>

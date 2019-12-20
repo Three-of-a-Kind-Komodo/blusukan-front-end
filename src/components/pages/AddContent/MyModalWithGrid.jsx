@@ -14,6 +14,7 @@ function MydModalWithGrid(props) {
     content: "",
     imageurl: "",
     mapurl: "",
+    mapembed: "",
     rating: 5,
     isactive: true
   });
@@ -146,6 +147,18 @@ function MydModalWithGrid(props) {
                     name="mapurl"
                     onChange={handleChange}
                     value={content.mapurl}
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputMapEmbed">Map Embed Url</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputMapEmbed"
+                    placeholder="Map Embed Url"
+                    name="mapembed"
+                    onChange={handleChange}
+                    value={content.mapembed}
                   />
                 </div>
                 <button type="submit" class="btn btn-default">

@@ -13,10 +13,10 @@ export default class About extends Component {
         <Grid>
           <Col xs={12} sm={8} smOffset={2}>
             <Image src="/assets/img/travel.jpg" className="about-pc" rounded />
-            <h3>City. Tours. Adventure.</h3>
+            <h3>Landmark. Culinary. Stay. Adventure.</h3>
 
             <p>
-              We are committed to offering city tours info of the highest
+              We are committed to offering tour guidances info of the highest
               quality, combining our energy and enthusiasm, with our years of
               experience. Our greatest satisfaction comes in serving large
               numbers of satisfied clients who have experienced the joys and

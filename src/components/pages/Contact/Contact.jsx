@@ -29,16 +29,16 @@ export default class Home extends Component {
             <Col xs={12} sm={4}>
               <h3>Contact Our Agency</h3>
               <p>
-                At City Tours we want to make sure that your trip is everything
-                you could possibly dream of. Whether you want inspiration and
-                guidance in planning your next city tour or need help with an
-                existing booking, our travel experts are here to help. Send us
-                an email or give our team a call to book your flights, plan your
-                tour or get help with any problems you encounter along the way.
-                Or if you’re in Jakarta, you can visit us to speak face to face.
-                Our assistance doesn’t end when you take off either. Our Global
-                Tour Help team are on hand to assist with any issues you may
-                have.
+                At Blusukan.com we want to make sure that your trip is
+                everything you could possibly dream of. Whether you want
+                inspiration and guidance in planning your next city tour or need
+                help with an existing booking, our travel experts are here to
+                help. Send us an email or give our team a call to book your
+                flights, plan your tour or get help with any problems you
+                encounter along the way. Or if you’re in Jakarta, you can visit
+                us to speak face to face. Our assistance doesn’t end when you
+                take off either. Our Global Tour Help team are on hand to assist
+                with any issues you may have.
               </p>
             </Col>
 

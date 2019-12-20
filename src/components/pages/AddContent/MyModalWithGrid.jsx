@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Row, Col, Button, Modal } from "react-bootstrap";
 import ReactFilestack from "filestack-react";
 import axios from "axios";
+import Rater from "react-rater";
 
 import { URI } from "../../helpers/path";
 import { UserContext } from "../../UserContext";
@@ -75,7 +76,14 @@ function MydModalWithGrid(props) {
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="rating">Rating</label>
+                  <label for="rating">
+                    Rating{" - "}
+                    <Rater
+                      total={5}
+                      rating={content.rating}
+                      interactive={false}
+                    />
+                  </label>
                   <select
                     class="form-control"
                     name="rating"

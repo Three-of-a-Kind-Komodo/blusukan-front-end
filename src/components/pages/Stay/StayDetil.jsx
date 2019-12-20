@@ -46,6 +46,10 @@ class StayDetil extends Component {
     if (!isLoaded) {
       return <div>Loading.....</div>;
     }
+    const embedurl = contents.mapembed
+      ? contents.mapembed
+      : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5145506318318!2d106.82016755088995!3d-6.195634262402062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f421963cd607%3A0x503cb9e9306e657a!2sHotel%20Indonesia%20Kempinski%20Jakarta!5e0!3m2!1sen!2sid!4v1576729123290!5m2!1sen!2sid";
+
     return (
       <div>
         <div className="content-wrapper">
@@ -69,7 +73,7 @@ class StayDetil extends Component {
           <Row>
             <Col md={12} lg={12} style={{ marginBottom: 20 }}>
               <Iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5145506318318!2d106.82016755088995!3d-6.195634262402062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f421963cd607%3A0x503cb9e9306e657a!2sHotel%20Indonesia%20Kempinski%20Jakarta!5e0!3m2!1sen!2sid!4v1576729123290!5m2!1sen!2sid"
+                src={embedurl}
                 width="600"
                 height="450"
                 frameborder="0"

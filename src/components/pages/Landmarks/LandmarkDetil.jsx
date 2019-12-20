@@ -46,6 +46,11 @@ class LandmarkDetil extends Component {
     if (!isLoaded) {
       return <div>Loading.....</div>;
     }
+
+    const embedurl = contents.mapembed
+      ? contents.mapembed
+      : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666466960832!2d106.82495875088968!3d-6.175387062212266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1576727909949!5m2!1sen!2sid";
+
     return (
       <div>
         <div className="content-wrapper">
@@ -68,7 +73,7 @@ class LandmarkDetil extends Component {
           <Row>
             <Col md={12} lg={12} style={{ marginBottom: 20 }}>
               <Iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666466960832!2d106.82495875088968!3d-6.175387062212266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1576727909949!5m2!1sen!2sid"
+                src={embedurl}
                 width="600"
                 height="450"
                 frameborder="0"

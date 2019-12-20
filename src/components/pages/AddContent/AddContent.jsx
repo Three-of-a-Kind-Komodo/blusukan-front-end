@@ -91,7 +91,7 @@ class AddContent extends Component {
                 <th style={{ textAlign: "center" }}>Image</th>
                 <th style={{ textAlign: "center" }}>Type</th>
                 <th style={{ textAlign: "center" }}>Title</th>
-                {/* <th>Content</th> */}
+                <th>Content</th>
                 <th colSpan="2" style={{ textAlign: "center" }}>
                   Action
                 </th>
@@ -105,7 +105,7 @@ class AddContent extends Component {
                       <Image src={data.imageurl} height={64} width={64} />
                     </td>
                     <td width={80} align={"center"}>
-                      {/* <i class={() => this.getFaClass(data.type)}></i> */}
+                      <i class={() => this.getFaClass(data.type)}></i>
                       <i
                         class={
                           data.type === "Landmark"
@@ -118,13 +118,13 @@ class AddContent extends Component {
                       {data.type}
                     </td>
                     <td width={150}>{data.title}</td>
-                    {/* <td>{data.content}</td> */}
-                    <td width={150} align={"center"}>
+                    <td>{data.content}</td>
+                    <td width={170} align={"center"}>
                       <Button
                         bsStyle="primary"
                         style={{
                           backgroundColor: "orange",
-                          width: 75,
+                          width: 60,
                           marginLeft: 5,
                           marginRight: 5
                         }}
@@ -139,7 +139,7 @@ class AddContent extends Component {
                           backgroundColor: "red",
                           marginLeft: 5,
                           marginRight: 5,
-                          width: 75
+                          width: 60
                         }}
                         onClick={() => this.getRowData(data)}
                       >

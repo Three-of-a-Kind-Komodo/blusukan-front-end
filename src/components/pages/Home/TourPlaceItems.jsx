@@ -41,7 +41,7 @@ class TourPlaceItems extends Component {
     axios
       .get(`https://blusukan.herokuapp.com/contents`)
       .then(result => {
-        console.log(result);
+        // console.log(result);
 
         this.setState({
           isLoaded: true,
@@ -96,7 +96,7 @@ class TourPlaceItems extends Component {
         }
       ]
     };
-    console.log(this.state.contents);
+    // console.log(this.state.contents);
     const { contents, error, isLoaded } = this.state;
     if (error) {
       return <div>{error}</div>;

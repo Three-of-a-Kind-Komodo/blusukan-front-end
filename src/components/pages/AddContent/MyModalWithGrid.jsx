@@ -31,20 +31,21 @@ function MydModalWithGrid(props) {
     event.preventDefault();
     console.log(content);
 
-    // axios
-    //   .post(URI + "/contents/" + user.user._id, content)
-    //   .then(result => {
-    //     console.log(result);
-    //   })
-    //   .catch(error => {
-    //     if (error) {
-    //       if (error.response) {
-    //         setError(error.response.data.message);
-    //       } else {
-    //         setError(error.message);
-    //       }
-    //     }
-    //   });
+    axios
+      .post(URI + "/contents/" + user.user._id, content)
+      .then(result => {
+        console.log(result);
+      })
+      .then(props.onHide)
+      .catch(error => {
+        if (error) {
+          if (error.response) {
+            setError(error.response.data.message);
+          } else {
+            setError(error.message);
+          }
+        }
+      });
   };
 
   return (
@@ -113,12 +114,6 @@ function MydModalWithGrid(props) {
                 </div>
                 <div class="form-group">
                   <label for="inputImageUrl">Image Url</label>
-                  {/* <input
-                    type="text"
-                    class="form-control"
-                    id="inputImageUrl"
-                    placeholder="Image Url"
-                  /> */}
                   {content.imageurl ? (
                     <img
                       src={content.imageurl}

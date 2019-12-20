@@ -84,7 +84,7 @@ export default class About extends Component {
                 <h3>Muhammad Faris Ibrahim</h3>
                 <h5>Front End Developer</h5>
                 <p>
-                  “I would highly recommend Baim because everything went without
+                  “Would highly recommended Baim because everything went without
                   a hitch.”
                 </p>
               </Col>
